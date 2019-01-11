@@ -17,9 +17,8 @@ const getFileList = (path = '') => {
   return fileList;
 };
 
-const regex = /[a-zA-Z\/?]{1,}/;
-
 const getRouteFromPath = (path = '') => {
+  const regex = /[a-zA-Z\/?]{1,}/;
   let controllerIndex = path.indexOf('/controller/');
   let routeDir = path.substring(controllerIndex + '/controller'.length);
   const found = routeDir.match(regex);
