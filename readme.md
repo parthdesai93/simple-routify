@@ -8,7 +8,7 @@ if you want a route `'/users/post/'`, just create a file `'controller/users/post
 
 Finally, to mount the routes do something like this:
 
-```
+```js
   const app = express();
   let baseDir = process.cwd();
   let controllerDir = baseDir + '/controller/'; 
